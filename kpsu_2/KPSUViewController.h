@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KPSUViewController : UIViewController
+@interface KPSUViewController : UIViewController <UITextFieldDelegate>
+- (IBAction)play_streaming:(id)sender;
 
 @end

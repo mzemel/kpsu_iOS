@@ -19,6 +19,9 @@
 		32333E76163B763B00A6824A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32333E74163B763B00A6824A /* MainStoryboard_iPhone.storyboard */; };
 		32333E79163B763B00A6824A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32333E77163B763B00A6824A /* MainStoryboard_iPad.storyboard */; };
 		32333E7C163B763B00A6824A /* KPSUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32333E7B163B763B00A6824A /* KPSUViewController.m */; };
+		32333E90163B84A800A6824A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32333E88163B831600A6824A /* MediaPlayer.framework */; };
+		32333E97163B9D1200A6824A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 32333E95163B9D1200A6824A /* play.png */; };
+		32333E98163B9D1200A6824A /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 32333E96163B9D1200A6824A /* stop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,10 @@
 		32333E78163B763B00A6824A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		32333E7A163B763B00A6824A /* KPSUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPSUViewController.h; sourceTree = "<group>"; };
 		32333E7B163B763B00A6824A /* KPSUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPSUViewController.m; sourceTree = "<group>"; };
+		32333E88163B831600A6824A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		32333E93163B8C8000A6824A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		32333E95163B9D1200A6824A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		32333E96163B9D1200A6824A /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32333E90163B84A800A6824A /* MediaPlayer.framework in Frameworks */,
 				32333E5D163B763B00A6824A /* UIKit.framework in Frameworks */,
 				32333E5F163B763B00A6824A /* Foundation.framework in Frameworks */,
 				32333E61163B763B00A6824A /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +66,7 @@
 		32333E4D163B763B00A6824A = {
 			isa = PBXGroup;
 			children = (
+				32333E88163B831600A6824A /* MediaPlayer.framework */,
 				32333E62163B763B00A6824A /* kpsu_2 */,
 				32333E5B163B763B00A6824A /* Frameworks */,
 				32333E59163B763B00A6824A /* Products */,
@@ -75,6 +84,7 @@
 		32333E5B163B763B00A6824A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32333E93163B8C8000A6824A /* MediaPlayer.framework */,
 				32333E5C163B763B00A6824A /* UIKit.framework */,
 				32333E5E163B763B00A6824A /* Foundation.framework */,
 				32333E60163B763B00A6824A /* CoreGraphics.framework */,
@@ -99,6 +109,8 @@
 		32333E63163B763B00A6824A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				32333E95163B9D1200A6824A /* play.png */,
+				32333E96163B9D1200A6824A /* stop.png */,
 				32333E64163B763B00A6824A /* kpsu_2-Info.plist */,
 				32333E65163B763B00A6824A /* InfoPlist.strings */,
 				32333E68163B763B00A6824A /* main.m */,
@@ -117,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32333E7F163B763B00A6824A /* Build configuration list for PBXNativeTarget "kpsu_2" */;
 			buildPhases = (
+				4CDFC91216F5609F00D3BB15 /* ShellScript */,
 				32333E54163B763B00A6824A /* Sources */,
 				32333E55163B763B00A6824A /* Frameworks */,
 				32333E56163B763B00A6824A /* Resources */,
@@ -137,7 +150,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KPSU;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mike;
 			};
 			buildConfigurationList = 32333E52163B763B00A6824A /* Build configuration list for PBXProject "kpsu_2" */;
@@ -168,10 +181,29 @@
 				32333E73163B763B00A6824A /* Default-568h@2x.png in Resources */,
 				32333E76163B763B00A6824A /* MainStoryboard_iPhone.storyboard in Resources */,
 				32333E79163B763B00A6824A /* MainStoryboard_iPad.storyboard in Resources */,
+				32333E97163B9D1200A6824A /* play.png in Resources */,
+				32333E98163B9D1200A6824A /* stop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CDFC91216F5609F00D3BB15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Developer/iphoneentitlements61/gen_entitlements.py",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "//export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\n export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate //if [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then /Developer/iphoneentitlements61/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\"; codesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\n//fi\n\ncodesign -fs \"Name\" Program\nscp Program mobile@iphone:";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32333E54163B763B00A6824A /* Sources */ = {
@@ -223,7 +255,9 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -252,7 +286,9 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -269,9 +305,17 @@
 		32333E80163B763B00A6824A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kpsu_2/kpsu_2-Prefix.pch";
 				INFOPLIST_FILE = "kpsu_2/kpsu_2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,9 +324,17 @@
 		32333E81163B763B00A6824A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kpsu_2/kpsu_2-Prefix.pch";
 				INFOPLIST_FILE = "kpsu_2/kpsu_2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -307,6 +359,7 @@
 				32333E81163B763B00A6824A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
