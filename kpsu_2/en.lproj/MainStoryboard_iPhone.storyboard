@@ -58,20 +58,6 @@
     <resources>
         <image name="play.png" width="49" height="49"/>
     </resources>
-    <classes>
-        <class className="KPSUViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KPSUViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="play_streaming:"/>
-                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pause_button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="play_button" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

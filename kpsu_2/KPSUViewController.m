@@ -38,7 +38,7 @@
     [super viewDidLoad];
     [self has_been_unclicked];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSURL *streamURL = [NSURL URLWithString:@"http://stream.kpsu.org:1138/ios/ts/listen_audiomp3_64k.m3u8"];
+    NSURL *streamURL = [NSURL URLWithString:@"http://stream.kpsu.org:1138/ios/ts/listen.m3u8"];
     
     _streamPlayer = [[MPMoviePlayerController alloc] initWithContentURL:streamURL];
     
