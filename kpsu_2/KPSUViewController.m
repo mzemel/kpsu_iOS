@@ -69,6 +69,13 @@ AVAudioSession *audioSession = nil;
     
     NSURL *url = [NSURL URLWithString:@"http://stream.kpsu.org:1138/ios/ts/listen.m3u8"];
 	_streamPlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
+    
+    MPVolumeView *systemVolumeSlider =
+        [[MPVolumeView alloc] initWithFrame: CGRectMake(100, 250, 200, 40)];
+    [self.view addSubview: systemVolumeSlider];
+    //MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:volumeView.bounds];
+	//[volumeView addSubview:volumeView];
+	//[volumeView sizeToFit];
 	
     
 }

@@ -9,22 +9,13 @@
             <objects>
                 <viewController id="2" customClass="KPSUViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="KPSU - Portland's College Radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDe-Fh-dgH">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="pDF-cI-ot5"/>
-                                    <constraint firstAttribute="width" constant="273" id="rxy-Z1-1QE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf5-AB-9vu">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="PT5-b0-CEC"/>
-                                    <constraint firstAttribute="width" constant="155" id="nr1-4R-Wcc"/>
+                                    <constraint firstAttribute="height" constant="40" id="kp8-Io-6ZO"/>
+                                    <constraint firstAttribute="width" constant="37" id="mkh-cs-18l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="play.png">
@@ -38,13 +29,19 @@
                                     <action selector="play_streaming:" destination="2" eventType="touchUpInside" id="Lhp-IR-VfW"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kpsu-300x200.png" translatesAutoresizingMaskIntoConstraints="NO" id="e45-au-oyQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="AVj-7h-Ose"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wDe-Fh-dgH" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="RxV-ap-wca"/>
-                            <constraint firstItem="wDe-Fh-dgH" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Vjd-e3-4gp"/>
-                            <constraint firstItem="Zf5-AB-9vu" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Whm-Df-gvF"/>
-                            <constraint firstItem="Zf5-AB-9vu" firstAttribute="top" secondItem="3" secondAttribute="top" constant="172" id="c9C-rF-XKI"/>
+                            <constraint firstItem="e45-au-oyQ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="9ch-fu-CxA"/>
+                            <constraint firstItem="Zf5-AB-9vu" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="38" id="DJc-qg-eFa"/>
+                            <constraint firstItem="e45-au-oyQ" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Zmk-Ow-sHy"/>
+                            <constraint firstAttribute="bottom" secondItem="Zf5-AB-9vu" secondAttribute="bottom" constant="179" id="eTG-D1-a29"/>
+                            <constraint firstItem="e45-au-oyQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="xwS-TW-4NH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -56,7 +53,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play.png" width="49" height="49"/>
+        <image name="kpsu-300x200.png" width="300" height="200"/>
+        <image name="play.png" width="48" height="48"/>
     </resources>
     <classes>
         <class className="KPSUViewController" superclassName="UIViewController">
@@ -75,6 +73,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

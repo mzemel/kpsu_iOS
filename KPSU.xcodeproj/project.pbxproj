@@ -13,26 +13,34 @@
 		32333E67163B763B00A6824A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32333E65163B763B00A6824A /* InfoPlist.strings */; };
 		32333E69163B763B00A6824A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32333E68163B763B00A6824A /* main.m */; };
 		32333E6D163B763B00A6824A /* KPSUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32333E6C163B763B00A6824A /* KPSUAppDelegate.m */; };
-		32333E6F163B763B00A6824A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 32333E6E163B763B00A6824A /* Default.png */; };
-		32333E71163B763B00A6824A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32333E70163B763B00A6824A /* Default@2x.png */; };
-		32333E73163B763B00A6824A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32333E72163B763B00A6824A /* Default-568h@2x.png */; };
 		32333E76163B763B00A6824A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32333E74163B763B00A6824A /* MainStoryboard_iPhone.storyboard */; };
 		32333E79163B763B00A6824A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32333E77163B763B00A6824A /* MainStoryboard_iPad.storyboard */; };
 		32333E7C163B763B00A6824A /* KPSUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32333E7B163B763B00A6824A /* KPSUViewController.m */; };
 		32333E90163B84A800A6824A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32333E88163B831600A6824A /* MediaPlayer.framework */; };
 		32333E97163B9D1200A6824A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 32333E95163B9D1200A6824A /* play.png */; };
 		32333E98163B9D1200A6824A /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 32333E96163B9D1200A6824A /* stop.png */; };
+		4CA6BCF0171275D4002A9BD6 /* kpsu-300x200.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6BCEF171275D4002A9BD6 /* kpsu-300x200.png */; };
+		4CE5DCCC171246360068A3AC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5DCCB171246360068A3AC /* icon.png */; };
+		4CE5DCCE1712468B0068A3AC /* retina_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5DCCD1712468B0068A3AC /* retina_icon.png */; };
+		4CE5DCD6171248110068A3AC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5DCD5171248110068A3AC /* Default-568h@2x.png */; };
+		4CE5DCDD171248D20068A3AC /* kpsu-hardwood320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5DCDC171248D20068A3AC /* kpsu-hardwood320x480.png */; };
+		4CE5DCDF171248EA0068A3AC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5DCDE171248EA0068A3AC /* Default.png */; };
+		4CE5DCE11712492B0068A3AC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5DCE01712492B0068A3AC /* Default@2x.png */; };
+		4CE5DCE3171250210068A3AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5DCE2171250210068A3AC /* AVFoundation.framework */; };
+		4CE5DCE5171250300068A3AC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5DCE4171250300068A3AC /* AudioToolbox.framework */; };
+		4CE5DCEC171267010068A3AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5DCEB171267010068A3AC /* QuartzCore.framework */; };
+		4CE5DCEE1712670C0068A3AC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE5DCED1712670C0068A3AC /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		32333E58163B763B00A6824A /* kpsu_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpsu_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32333E58163B763B00A6824A /* KPSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32333E5C163B763B00A6824A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		32333E5E163B763B00A6824A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32333E60163B763B00A6824A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		32333E64163B763B00A6824A /* kpsu_2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kpsu_2-Info.plist"; sourceTree = "<group>"; };
+		32333E64163B763B00A6824A /* KPSU-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KPSU-Info.plist"; sourceTree = "<group>"; };
 		32333E66163B763B00A6824A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32333E68163B763B00A6824A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32333E6A163B763B00A6824A /* kpsu_2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kpsu_2-Prefix.pch"; sourceTree = "<group>"; };
+		32333E6A163B763B00A6824A /* KPSU-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KPSU-Prefix.pch"; sourceTree = "<group>"; };
 		32333E6B163B763B00A6824A /* KPSUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPSUAppDelegate.h; sourceTree = "<group>"; };
 		32333E6C163B763B00A6824A /* KPSUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPSUAppDelegate.m; sourceTree = "<group>"; };
 		32333E6E163B763B00A6824A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -46,6 +54,17 @@
 		32333E93163B8C8000A6824A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		32333E95163B9D1200A6824A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		32333E96163B9D1200A6824A /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		4CA6BCEF171275D4002A9BD6 /* kpsu-300x200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kpsu-300x200.png"; sourceTree = "<group>"; };
+		4CE5DCCB171246360068A3AC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4CE5DCCD1712468B0068A3AC /* retina_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina_icon.png; sourceTree = "<group>"; };
+		4CE5DCD5171248110068A3AC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4CE5DCDC171248D20068A3AC /* kpsu-hardwood320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kpsu-hardwood320x480.png"; sourceTree = "<group>"; };
+		4CE5DCDE171248EA0068A3AC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4CE5DCE01712492B0068A3AC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4CE5DCE2171250210068A3AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4CE5DCE4171250300068A3AC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4CE5DCEB171267010068A3AC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4CE5DCED1712670C0068A3AC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE5DCEE1712670C0068A3AC /* CFNetwork.framework in Frameworks */,
+				4CE5DCEC171267010068A3AC /* QuartzCore.framework in Frameworks */,
+				4CE5DCE5171250300068A3AC /* AudioToolbox.framework in Frameworks */,
+				4CE5DCE3171250210068A3AC /* AVFoundation.framework in Frameworks */,
 				32333E90163B84A800A6824A /* MediaPlayer.framework in Frameworks */,
 				32333E5D163B763B00A6824A /* UIKit.framework in Frameworks */,
 				32333E5F163B763B00A6824A /* Foundation.framework in Frameworks */,
@@ -66,6 +89,17 @@
 		32333E4D163B763B00A6824A = {
 			isa = PBXGroup;
 			children = (
+				4CE5DCED1712670C0068A3AC /* CFNetwork.framework */,
+				4CE5DCEB171267010068A3AC /* QuartzCore.framework */,
+				4CE5DCE4171250300068A3AC /* AudioToolbox.framework */,
+				4CE5DCE2171250210068A3AC /* AVFoundation.framework */,
+				4CE5DCE01712492B0068A3AC /* Default@2x.png */,
+				4CE5DCDE171248EA0068A3AC /* Default.png */,
+				4CE5DCD5171248110068A3AC /* Default-568h@2x.png */,
+				4CE5DCCD1712468B0068A3AC /* retina_icon.png */,
+				4CE5DCCB171246360068A3AC /* icon.png */,
+				4CE5DCDC171248D20068A3AC /* kpsu-hardwood320x480.png */,
+				4CA6BCEF171275D4002A9BD6 /* kpsu-300x200.png */,
 				32333E88163B831600A6824A /* MediaPlayer.framework */,
 				32333E62163B763B00A6824A /* kpsu_2 */,
 				32333E5B163B763B00A6824A /* Frameworks */,
@@ -76,7 +110,7 @@
 		32333E59163B763B00A6824A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				32333E58163B763B00A6824A /* kpsu_2.app */,
+				32333E58163B763B00A6824A /* KPSU.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,10 +145,10 @@
 			children = (
 				32333E95163B9D1200A6824A /* play.png */,
 				32333E96163B9D1200A6824A /* stop.png */,
-				32333E64163B763B00A6824A /* kpsu_2-Info.plist */,
+				32333E64163B763B00A6824A /* KPSU-Info.plist */,
 				32333E65163B763B00A6824A /* InfoPlist.strings */,
 				32333E68163B763B00A6824A /* main.m */,
-				32333E6A163B763B00A6824A /* kpsu_2-Prefix.pch */,
+				32333E6A163B763B00A6824A /* KPSU-Prefix.pch */,
 				32333E6E163B763B00A6824A /* Default.png */,
 				32333E70163B763B00A6824A /* Default@2x.png */,
 				32333E72163B763B00A6824A /* Default-568h@2x.png */,
@@ -125,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		32333E57163B763B00A6824A /* kpsu_2 */ = {
+		32333E57163B763B00A6824A /* KPSU */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 32333E7F163B763B00A6824A /* Build configuration list for PBXNativeTarget "kpsu_2" */;
+			buildConfigurationList = 32333E7F163B763B00A6824A /* Build configuration list for PBXNativeTarget "KPSU" */;
 			buildPhases = (
 				4CDFC91216F5609F00D3BB15 /* ShellScript */,
 				32333E54163B763B00A6824A /* Sources */,
@@ -138,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = kpsu_2;
+			name = KPSU;
 			productName = kpsu_2;
-			productReference = 32333E58163B763B00A6824A /* kpsu_2.app */;
+			productReference = 32333E58163B763B00A6824A /* KPSU.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +187,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mike;
 			};
-			buildConfigurationList = 32333E52163B763B00A6824A /* Build configuration list for PBXProject "kpsu_2" */;
+			buildConfigurationList = 32333E52163B763B00A6824A /* Build configuration list for PBXProject "KPSU" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				32333E57163B763B00A6824A /* kpsu_2 */,
+				32333E57163B763B00A6824A /* KPSU */,
 			);
 		};
 /* End PBXProject section */
@@ -176,13 +210,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				32333E67163B763B00A6824A /* InfoPlist.strings in Resources */,
-				32333E6F163B763B00A6824A /* Default.png in Resources */,
-				32333E71163B763B00A6824A /* Default@2x.png in Resources */,
-				32333E73163B763B00A6824A /* Default-568h@2x.png in Resources */,
 				32333E76163B763B00A6824A /* MainStoryboard_iPhone.storyboard in Resources */,
 				32333E79163B763B00A6824A /* MainStoryboard_iPad.storyboard in Resources */,
 				32333E97163B9D1200A6824A /* play.png in Resources */,
 				32333E98163B9D1200A6824A /* stop.png in Resources */,
+				4CE5DCCC171246360068A3AC /* icon.png in Resources */,
+				4CE5DCCE1712468B0068A3AC /* retina_icon.png in Resources */,
+				4CE5DCD6171248110068A3AC /* Default-568h@2x.png in Resources */,
+				4CE5DCDD171248D20068A3AC /* kpsu-hardwood320x480.png in Resources */,
+				4CE5DCDF171248EA0068A3AC /* Default.png in Resources */,
+				4CE5DCE11712492B0068A3AC /* Default@2x.png in Resources */,
+				4CA6BCF0171275D4002A9BD6 /* kpsu-300x200.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +355,10 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kpsu_2/kpsu_2-Prefix.pch";
-				INFOPLIST_FILE = "kpsu_2/kpsu_2-Info.plist";
+				GCC_PREFIX_HEADER = "kpsu_2/KPSU-Prefix.pch";
+				INFOPLIST_FILE = "kpsu_2/KPSU-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KPSU;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
@@ -338,10 +376,10 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kpsu_2/kpsu_2-Prefix.pch";
-				INFOPLIST_FILE = "kpsu_2/kpsu_2-Info.plist";
+				GCC_PREFIX_HEADER = "kpsu_2/KPSU-Prefix.pch";
+				INFOPLIST_FILE = "kpsu_2/KPSU-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KPSU;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
@@ -351,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		32333E52163B763B00A6824A /* Build configuration list for PBXProject "kpsu_2" */ = {
+		32333E52163B763B00A6824A /* Build configuration list for PBXProject "KPSU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32333E7D163B763B00A6824A /* Debug */,
@@ -360,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		32333E7F163B763B00A6824A /* Build configuration list for PBXNativeTarget "kpsu_2" */ = {
+		32333E7F163B763B00A6824A /* Build configuration list for PBXNativeTarget "KPSU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				32333E80163B763B00A6824A /* Debug */,
