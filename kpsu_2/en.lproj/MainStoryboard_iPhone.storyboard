@@ -14,7 +14,8 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="KPSU - Portland's College Radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDe-Fh-dgH">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="ZhQ-4j-qMo"/>
+                                    <constraint firstAttribute="height" constant="98" id="pDF-cI-ot5"/>
+                                    <constraint firstAttribute="width" constant="273" id="rxy-Z1-1QE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -22,8 +23,8 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf5-AB-9vu">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="227" id="IdU-OT-8dy"/>
-                                    <constraint firstAttribute="height" constant="239" id="Xg6-vf-uyQ"/>
+                                    <constraint firstAttribute="height" constant="160" id="PT5-b0-CEC"/>
+                                    <constraint firstAttribute="width" constant="155" id="nr1-4R-Wcc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="play.png">
@@ -38,13 +39,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="wDe-Fh-dgH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EDb-5c-FW3"/>
                             <constraint firstItem="wDe-Fh-dgH" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="RxV-ap-wca"/>
                             <constraint firstItem="wDe-Fh-dgH" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Vjd-e3-4gp"/>
-                            <constraint firstItem="Zf5-AB-9vu" firstAttribute="top" secondItem="3" secondAttribute="top" constant="90" id="WZ7-ys-aMf"/>
-                            <constraint firstItem="Zf5-AB-9vu" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="46" id="hGc-Xv-SYh"/>
+                            <constraint firstItem="Zf5-AB-9vu" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Whm-Df-gvF"/>
+                            <constraint firstItem="Zf5-AB-9vu" firstAttribute="top" secondItem="3" secondAttribute="top" constant="172" id="c9C-rF-XKI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -58,6 +58,20 @@
     <resources>
         <image name="play.png" width="49" height="49"/>
     </resources>
+    <classes>
+        <class className="KPSUViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KPSUViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="play_streaming:"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pause_button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="play_button" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

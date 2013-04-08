@@ -8,6 +8,8 @@
 
 #import "KPSUViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface KPSUViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -18,9 +20,33 @@
 
 
 
+
 @end
 
+
 @implementation KPSUViewController
+
+
+AVAudioSession *audioSession = nil;
++ (void)initialize{
+    
+    if(!audioSession){
+        audioSession = [AVAudioSession sharedInstance];
+    }
+    
+    audioSession = [AVAudioSession sharedInstance];
+    
+    NSError *setCategoryError = nil;
+    BOOL success = [audioSession setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
+    if (!success) { }
+    
+    NSError *activationError = nil;
+    success = [audioSession setActive:YES error:&activationError];
+    if (!success) { }
+    
+}
+
+
 
 -(void)has_been_clicked {
     _been_clicked=YES;
@@ -33,17 +59,20 @@
 
 @synthesize streamPlayer = _streamPlayer;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self has_been_unclicked];
-	// Do any additional setup after loading the view, typically from a nib.
-    NSURL *streamURL = [NSURL URLWithString:@"http://stream.kpsu.org:1138/ios/ts/listen.m3u8"];
+
     
-    _streamPlayer = [[MPMoviePlayerController alloc] initWithContentURL:streamURL];
     
+    NSURL *url = [NSURL URLWithString:@"http://stream.kpsu.org:1138/ios/ts/listen.m3u8"];
+	_streamPlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	
     
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -57,18 +86,19 @@
         //[self.streamPlayer.view setFrame: self.view.bounds ];
         //self.streamPlayer.controlStyle = MPMovieControlStyleEmbedded;
         //[self.view addSubview: self.streamPlayer.view];
-        
+        [self.streamPlayer setControlStyle:MPMovieControlModeVolumeOnly];
         [self.streamPlayer prepareToPlay];
 
         [self.streamPlayer play];
+        
         [_play_button setBackgroundImage:[UIImage imageNamed:@"stop.png"] forState:UIControlStateNormal];
         [self has_been_clicked];
         //NSLog(@"Action bold=%d", been_clicked);
 
     }
     else if (_been_clicked){
-        [self.streamPlayer stop];
         [_play_button setBackgroundImage:[UIImage imageNamed:@"play.png"] forState:UIControlStateNormal];
+        [self.streamPlayer stop];
         [self has_been_unclicked];
     }
 }
