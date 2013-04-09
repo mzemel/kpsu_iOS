@@ -2,8 +2,8 @@
 //  KPSUAppDelegate.m
 //  kpsu_2
 //
-//  Created by mike on 10/26/12.
-//  Copyright (c) 2012 mike. All rights reserved.
+//  Created by Michael Zemel on 10/26/12.
+//  Copyright (c) 2012 Michael Zemel. All rights reserved.
 //
 
 #import "KPSUAppDelegate.h"

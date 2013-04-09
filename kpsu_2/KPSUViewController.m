@@ -2,8 +2,8 @@
 //  KPSUViewController.m
 //  kpsu_2
 //
-//  Created by mike on 10/26/12.
-//  Copyright (c) 2012 mike. All rights reserved.
+//  Created by Michael Zemel on 10/26/12.
+//  Copyright (c) 2012 Michael Zemel. All rights reserved.
 //
 
 #import "KPSUViewController.h"
@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *play_button;
 @property (weak, nonatomic) IBOutlet UIButton *pause_button;
 @property (readwrite, assign) BOOL been_clicked;
+@property (weak, nonatomic) IBOutlet UIButton *link;
 
 
 
@@ -70,9 +71,10 @@ AVAudioSession *audioSession = nil;
     NSURL *url = [NSURL URLWithString:@"http://stream.kpsu.org:1138/ios/ts/listen.m3u8"];
 	_streamPlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
     
-    MPVolumeView *systemVolumeSlider =
-        [[MPVolumeView alloc] initWithFrame: CGRectMake(100, 250, 200, 40)];
-    [self.view addSubview: systemVolumeSlider];
+    //MPVolumeView *systemVolumeSlider =
+    //    [[MPVolumeView alloc] initWithFrame: CGRectMake(100, 250, 200, 40)];
+    //[self.view addSubview: systemVolumeSlider];
+    
     //MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:volumeView.bounds];
 	//[volumeView addSubview:volumeView];
 	//[volumeView sizeToFit];
@@ -108,6 +110,11 @@ AVAudioSession *audioSession = nil;
         [self.streamPlayer stop];
         [self has_been_unclicked];
     }
+}
+
+- (IBAction)goto_kpsu {
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://www.kpsu.org" ];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 
